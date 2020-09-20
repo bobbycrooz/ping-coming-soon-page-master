@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin");
+body,
+h2,
+p {
+  font-size: 1.25rem default;
+  font-size: "Libre Franklin", sans-serif;
+  color: #969696;
+}
+
+.a {
+  border: 0.5px solid orange;
+}
+
+.danger {
+  border-color: #ff5263;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin-top: 20px;
+  width: 400px;
+  height: 100%;
+}
+.container .card__one {
+  width: 100%;
+  text-align: center;
+}
+.container .card__one .logo {
+  width: 50px;
+  height: 15px;
+}
+.container .card__one__head {
+  margin-top: 20px;
+}
+.container .card__one__head h2 {
+  font-weight: 300;
+}
+.container .card__one__head h2 b {
+  color: #151f29;
+  font-weight: 700;
+}
+.container .card__one__head p {
+  font-weight: 300;
+  color: #151f29;
+}
+.container .card__one__email {
+  border-radius: 50px;
+}
+.container .card__one__email__container {
+  position: relative;
+}
+.container .card__one__email__container::after {
+  content: "please provide a valid email address";
+  position: absolute;
+  display: block;
+  font-style: italic;
+  font-weight: 600;
+  font-size: small;
+  left: 0px;
+  margin-left: 50px;
+  color: #ff5263;
+}
+.container .card__one__subBtn {
+  border-radius: 50px;
+  background-color: #4f7df3;
+  color: #c2d3ff;
+  font-weight: 600;
+  box-shadow: 0 0.31rem 0.94rem #c2d3ff;
+}
+.container .card__two__image {
+  margin-top: 3.2rem;
+  widows: 100%;
+  height: 200px;
+}
+.container .icon__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+}
+.container .icon__container_items {
+  font-size: 30px;
+  border: 1px solid #c2d3ff;
+  border-radius: 50%;
+  padding: 5px;
+  color: #4f7df3;
+  margin-left: 8px;
+  width: 30px;
+  height: 30px;
+}
+.container .icon__container_items:hover {
+  color: #c2d3ff;
+  background-color: #4f7df3;
+  cursor: pointer;
+}
+.container .copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

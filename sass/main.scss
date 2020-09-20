@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin');
+@import '_variables';
+
+body,
+h2,
+p{
+    font-size: $font default;
+    font-size: $franklin;
+    color: $gray;
+
+}
+
+.a { border: 0.5px solid orange; }
+.danger{ border-color: $lightred;}
+
+.container{
+    display: flex;
+    flex-flow: column nowrap;   
+    justify-content: center;
+    margin-top: 20px;
+    width: 400px;
+    height: 100%;
+    .card__one{
+       width: 100%;
+       text-align: center;
+       .logo{
+           width: 50px;
+           height: 15px;
+       }
+       &__head{
+           margin-top: 20px;
+           h2{
+               font-weight: $fw-3;
+               b{
+                   color: $darkblue;
+                   font-weight: $fw-7;
+               }
+           }
+           p{
+               font-weight: $fw-3;
+               color: $darkblue;
+           }
+       }
+       &__email{
+        border-radius: 50px;
+        
+    }
+       &__email__container{
+            position: relative;
+            // margin-bottom: -20px;
+            &::after{
+                content: 'please provide a valid email address';
+                position: absolute;
+                display: block;
+                font-style: italic;
+                font-weight: $fw-6;
+                font-size: small;
+               left: 0px;
+               margin-left: 50px;
+               color: $lightred;
+            }
+       }
+       &__subBtn{
+        border-radius: 50px;
+        background-color: $blue;
+        color: $paleblue;
+        font-weight: $fw-6;
+        box-shadow: 0 0.31rem 0.94rem  $paleblue;
+       }
+     
+    }
+    .card__two__image{
+        // background: url('../images/illustration-dashboard.png') center no-repeat;
+        // background-size: contain;
+        margin-top: 3.2rem;
+        widows: 100%;
+        height: 200px;
+
+    }
+    .icon__container{
+        display: flex;
+        justify-content: center;
+        margin-top: 7rem;
+        &_items{
+            font-size: 30px;
+            border: 1px solid $paleblue;
+            border-radius: 50%;
+            padding: 5px;
+            color: $blue;
+            margin-left: 8px;
+            width: 30px;
+            height: 30px;
+            &:hover{
+                color: $paleblue;
+                background-color: $blue;
+                cursor: pointer;
+            }
+        }
+    }
+    .copyright{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+}
